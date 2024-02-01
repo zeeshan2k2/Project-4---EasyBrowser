@@ -13,6 +13,7 @@
 		C15CB4312B630FFB00DCE358 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C15CB42F2B630FFB00DCE358 /* Main.storyboard */; };
 		C15CB4332B630FFD00DCE358 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C15CB4322B630FFD00DCE358 /* Assets.xcassets */; };
 		C15CB4362B630FFD00DCE358 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C15CB4342B630FFD00DCE358 /* LaunchScreen.storyboard */; };
+		C1A6CF942B6B098F00C41A65 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A6CF932B6B098F00C41A65 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C15CB4322B630FFD00DCE358 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C15CB4352B630FFD00DCE358 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C15CB4372B630FFD00DCE358 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1A6CF932B6B098F00C41A65 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +60,16 @@
 			children = (
 				C15CB4292B630FFB00DCE358 /* AppDelegate.swift */,
 				C15CB42B2B630FFB00DCE358 /* SceneDelegate.swift */,
+				C1A6CF932B6B098F00C41A65 /* TableViewController.swift */,
 				C15CB42D2B630FFB00DCE358 /* ViewController.swift */,
 				C15CB42F2B630FFB00DCE358 /* Main.storyboard */,
 				C15CB4322B630FFD00DCE358 /* Assets.xcassets */,
 				C15CB4342B630FFD00DCE358 /* LaunchScreen.storyboard */,
 				C15CB4372B630FFD00DCE358 /* Info.plist */,
 			);
-			path = "Project 4 - EasyBrowser";
-			sourceTree = "<group>";
+			name = "Project 4 - EasyBrowser";
+			path = "/Users/zeeshanwaheed/Desktop/Swift/Project 4 - EasyBrowser/Project 4 - EasyBrowser";
+			sourceTree = "<absolute>";
 		};
 /* End PBXGroup section */
 
@@ -102,7 +106,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C15CB4212B630FFB00DCE358 /* Build configuration list for PBXProject "Project 4 - EasyBrowser" */;
+			buildConfigurationList = C15CB4212B630FFB00DCE358 /* Build configuration list for PBXProject "EasyBrowser" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -141,6 +145,7 @@
 				C15CB42E2B630FFB00DCE358 /* ViewController.swift in Sources */,
 				C15CB42A2B630FFB00DCE358 /* AppDelegate.swift in Sources */,
 				C15CB42C2B630FFB00DCE358 /* SceneDelegate.swift in Sources */,
+				C1A6CF942B6B098F00C41A65 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +223,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -275,7 +280,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -295,11 +300,13 @@
 				DEVELOPMENT_TEAM = N7L3GJ6Y8X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Project 4 - EasyBrowser/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = EasyBrowser;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,11 +330,13 @@
 				DEVELOPMENT_TEAM = N7L3GJ6Y8X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Project 4 - EasyBrowser/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = EasyBrowser;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,7 +353,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C15CB4212B630FFB00DCE358 /* Build configuration list for PBXProject "Project 4 - EasyBrowser" */ = {
+		C15CB4212B630FFB00DCE358 /* Build configuration list for PBXProject "EasyBrowser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C15CB4382B630FFD00DCE358 /* Debug */,
