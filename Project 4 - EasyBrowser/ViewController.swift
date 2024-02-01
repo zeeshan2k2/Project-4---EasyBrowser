@@ -15,10 +15,13 @@ class ViewController: UIViewController, WKNavigationDelegate, UIAlertViewDelegat
     var webView: WKWebView!
     var progressView: UIProgressView!
 //  array to store all websites
-//    var websites = ["apple.com", "hackingwithswift.com"]
+//  var websites = ["apple.com", "hackingwithswift.com"]
+
+//  the data was assigned in the previous viewcontroller file
     var websites: [String]!
     var SelectedSites: String!
-    
+
+//  to display website
     override func loadView() {
         webView = WKWebView()
         webView.navigationDelegate = self
@@ -30,7 +33,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UIAlertViewDelegat
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Open", style: .plain, target: self, action: #selector(openTapped))
         
-//      adding a refresh button and progress bar
+//      adding a refresh button and progress bar, as well as forward and back buttons for page navigation in ToolBar
         let spacer = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         let refresh = UIBarButtonItem(barButtonSystemItem: .refresh, target: webView, action: #selector(webView.reload))
         let back = UIBarButtonItem(image: UIImage(systemName: "chevron.backward"),
@@ -45,6 +48,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UIAlertViewDelegat
         progressView.sizeToFit()
         let progressButton = UIBarButtonItem(customView: progressView)
         
+//      adding variblae in toolbaritems using an array such that it displays it
         toolbarItems = [progressButton, spacer, back, forward, spacer, refresh]
         navigationController?.isToolbarHidden = false
 //      for progress bar
@@ -90,7 +94,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UIAlertViewDelegat
         }
     }
     
-    
+//  to check whether the website is safe or not
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         let url = navigationAction.request.url
         
