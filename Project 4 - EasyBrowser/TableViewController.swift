@@ -36,7 +36,6 @@ class TableViewController: UITableViewController {
         if let vc = storyboard?.instantiateViewController(withIdentifier:"Webpage") as? ViewController {
             vc.websites = websites
             vc.SelectedSites = websites[indexPath.row]
-//            print(websites)
             navigationController?.pushViewController(vc, animated: true)
         }
     }

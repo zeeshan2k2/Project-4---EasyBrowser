@@ -77,7 +77,6 @@ class ViewController: UIViewController, WKNavigationDelegate, UIAlertViewDelegat
     }
 
     func openPage(action: UIAlertAction) {
-//        let url = URL(string: "https://" + action.title!)!
         guard let actionTitle = action.title else { return }
         guard let url = URL(string: "https://" + actionTitle) else { return }
         webView.load(URLRequest(url: url))
@@ -105,7 +104,6 @@ class ViewController: UIViewController, WKNavigationDelegate, UIAlertViewDelegat
                     return
                 } else {
                     let alert = UIAlertController(title: "Error", message: "Site is not safe", preferredStyle: .alert)
-//                    print("site wasn't safe")
                     alert.addAction(UIAlertAction(title: "cancel", style: .cancel))
                     decisionHandler(.cancel)
                     present(alert, animated: true)
